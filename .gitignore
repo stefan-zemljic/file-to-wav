@@ -1,0 +1,11 @@
+# ignore all input files
+input/*
+
+# except for the example
+!input/example
+
+# ignore all output files
+output/*
+
+# except for the example
+!output/example
