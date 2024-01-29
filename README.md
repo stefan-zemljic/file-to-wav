@@ -40,4 +40,4 @@
 ## Notes
 
 To change the voice you have to use a different file in `convert.sh`.
-Download addional voices from https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0. (You have to download both the .onnx and the .onnx.json)
+Download additional voices from https://huggingface.co/rhasspy/piper-voices/tree/v1.0.0. (You have to download both the .onnx and the .onnx.json)
