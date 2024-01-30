@@ -17,10 +17,22 @@ mkdir -p $input_dir
 suffix=1
 
 # Find the highest suffix in use
-if ls $base_name-* 1> /dev/null 2>&1; then
-    suffix=$(ls $base_name-* | sort -t- -n -k2 | tail -1 | tr -dc '0-9')
-    let "suffix++"
-fi
+
+## 1. Find all files with the same base name
+files=$(find $input_dir -wholename "$base_name-*")
+
+## 2. Extract the suffixes
+suffixes=$(echo $files | sed -e "s|$base_name-||g")
+
+## 3. Find the highest suffix
+for suffix in $suffixes; do
+    if [[ $suffix -gt $max_suffix ]]; then
+        max_suffix=$suffix
+    fi
+done
+
+## 4. Increment the suffix
+suffix=$((max_suffix + 1))
 
 input_file="$base_name-$suffix"
 
