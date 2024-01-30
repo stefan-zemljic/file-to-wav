@@ -1,10 +1,12 @@
 ## Features
 
-### Convert text to wav
+### Convert text to wav (for windows)
 
 - put the textfile into the directory ./input/
 - start up docker
 - execute ./run.sh
+
+Note: will not work on non-windows system because of paths and stuff.
 
 ### Generate input from clipboard (for windows)
 
@@ -40,6 +42,7 @@ Note: if you know a simple way of writing such scripts in a way that is platform
 - Assistant: Github Copilot Chat
 - IDE: Visual Studio Code
 - OS: Windows
+- CMD: Git bash (but uses powershell to paste clipboard into file)
 
 ## Notes
 
