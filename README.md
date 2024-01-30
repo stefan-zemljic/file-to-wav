@@ -42,7 +42,7 @@ Note: if you know a simple way of writing such scripts in a way that is platform
 - Assistant: Github Copilot Chat
 - IDE: Visual Studio Code
 - OS: Windows
-- CMD: Git bash (but uses powershell to paste clipboard into file)
+- Shell: Git bash (but uses powershell to paste clipboard into file)
 
 ## Notes
 
