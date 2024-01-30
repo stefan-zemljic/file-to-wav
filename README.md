@@ -1,15 +1,21 @@
 ## Features
 
-### Convert text to wav
+### Convert text to wav (for windows)
 
 - put the textfile into the directory ./input/
 - start up docker
 - execute ./run.sh
 
+Note: will not work on non-windows system because of paths and stuff.
+
 ### Generate input from clipboard (for windows)
 
+- Will not work on subsystem or if no powershell.exe is available
+- Open a **GIT BASH** (https://git-scm.com/downloads)
 - Copy text into clipboard
 - Execute `./paste.sh example`
+
+Note: if you know a simple way of writing such scripts in a way that is platform independent and reliable, please tell me :)
 
 ### Poormans use
 
@@ -36,6 +42,7 @@
 - Assistant: Github Copilot Chat
 - IDE: Visual Studio Code
 - OS: Windows
+- Shell: Git bash (but uses powershell to paste clipboard into file)
 
 ## Notes
 
